@@ -1,1 +1,66 @@
 /*  your css code here. If applicable */
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Architecture Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .imageContainer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th:first-child, td:first-child,
+    th:last-child, td:last-child {
+      width: 200px;
+    }
+
+    th:nth-child(2), td:nth-child(2) {
+      width: 600px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="imageContainer">
+    <img src="image1.jpg" alt="Architecture Image 1">
+  </div>
+  
+  <table>
+    <tr>
+      <th><img src="image2.jpg" alt="Architecture Image 2"></th>
+      <td>Text content describing the architecture.</td>
+      <th><img src="image3.jpg" alt="Architecture Image 3"></th>
+    </tr>
+    <tr>
+      <th><img src="image4.jpg" alt="Architecture Image 4"></th>
+      <td>More text content about the architectural details.</td>
+      <th><img src="image5.jpg" alt="Architecture Image 5"></th>
+    </tr>
+  </table>
+</body>
+</html>
